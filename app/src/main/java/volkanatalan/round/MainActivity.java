@@ -7,7 +7,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.TextView;
 
-import static volkanatalan.round.Calc.roundToDecimalPlace2;
+import static volkanatalan.round.Calc.roundToDecimalPlace;
 
 public class MainActivity extends AppCompatActivity {
   EditText editText, editText2;
@@ -30,7 +30,7 @@ public class MainActivity extends AppCompatActivity {
     Double number = Double.valueOf(editText.getText().toString());
     int digitNumberAfterDot = Integer.valueOf(editText2.getText().toString());
   
-    double result = roundToDecimalPlace2(number, digitNumberAfterDot);
+    double result = roundToDecimalPlace(number, digitNumberAfterDot);
     
     textView.setText(result+"");
   }
