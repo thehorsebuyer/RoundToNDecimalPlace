@@ -26,9 +26,9 @@ public class Calc {
   
     int nextNumber = Integer.valueOf(valueChars.get(indexOfRoundPlace + 1));
     if (nextNumber < 4) {
-      result = Double.valueOf(resultString);
+      return Double.valueOf(resultString);
     } else if (nextNumber > 4) {
-      result = Double.valueOf(resultString) + (1 / Math.pow(10, decimalNumberAfterDot));
+      return Double.valueOf(resultString) + (1 / Math.pow(10, decimalNumberAfterDot));
     }
     
     
